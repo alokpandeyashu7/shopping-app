@@ -10,9 +10,20 @@
     gap:10px;
 }
 .nav-logo p{
-    color: #171717;
+    color: #e48706d8;
     font-size: 38px;
     font-weight: 600;
+    
+   font-family: 'Poppins', sans-serif; /* modern font */
+    text-transform: uppercase; /* brandy look */
+    letter-spacing: 2px; /* spaced out letters */
+    transition: all 0.3s ease; /* smooth hover effect */
+    cursor: pointer;
+}
+
+.nav-logo p:hover {
+    color: #ffb84d; /* lighter orange on hover */
+    transform: scale(1.1); /* zoom effect */
 }
 .nav-menu{
     display: flex;
