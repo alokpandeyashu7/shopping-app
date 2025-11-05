@@ -1,0 +1,111 @@
+.relatedproduct {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 30px 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.relatedproduct h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.relatedproduct hr {
+  width: 100px;
+  height: 4px;
+  border: none;
+  background-color: #007bff;
+  border-radius: 10px;
+  margin: 0 auto 30px auto;
+}
+
+/* Product Grid */
+.relatedproduct-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 0 10px;
+}
+
+/* Each Item Card Styling */
+.relatedproduct-item .item {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 250px;
+}
+
+.relatedproduct-item .item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Item Image */
+.relatedproduct-item .item img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Item Name */
+.relatedproduct-item .item p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Price Styling */
+.relatedproduct-item .item-prices {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.relatedproduct-item .item-price-new {
+  color: #007bff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.relatedproduct-item .item-price-old {
+  color: #888;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .relatedproduct {
+    padding: 20px 10px;
+  }
+
+  .relatedproduct h1 {
+    font-size: 24px;
+  }
+
+  .relatedproduct-item {
+    gap: 15px;
+  }
+
+  .relatedproduct-item .item img {
+    height: 200px;
+  }
+}

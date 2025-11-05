@@ -1,0 +1,82 @@
+.descritptionbox {
+  width: 100%;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigator Tabs (Description / Reviews) */
+.descritptionbox-navigator {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.descritpionbox-nav-box,
+.descritptionbox-nav-box-fade {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 6px;
+}
+
+.descritpionbox-nav-box {
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+}
+
+.descritptionbox-nav-box-fade {
+  color: #777;
+}
+
+.descritptionbox-nav-box-fade:hover {
+  color: #007bff;
+}
+
+/* Description Text */
+.descritptionbox-description {
+  color: #444;
+  line-height: 1.8;
+  font-size: 15.5px;
+  margin-top: 20px;
+}
+
+.descritptionbox-description p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Hover Animation for Box */
+.descritptionbox:hover {
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .descritptionbox {
+    padding: 20px;
+  }
+
+  .descritptionbox-navigator {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .descritpionbox-nav-box,
+  .descritptionbox-nav-box-fade {
+    font-size: 16px;
+  }
+
+  .descritptionbox-description {
+    font-size: 14.5px;
+  }
+}
