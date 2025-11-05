@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="nav-logo">
         <img src={logo} alt="" />
-        <p>Pragya</p>
+        <p>Shopping - App</p>
       </div>
       <ul className="nav-menu">
         <li onClick={() => setMenu("shop")}><NavLink to="/" style={{ textDecoration: "none" }}>Shop</NavLink> {menu === "shop" ? <hr /> : <></>}</li>
